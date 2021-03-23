@@ -5,3 +5,7 @@ body {
 .icon-chev{
   color: white;
 }
+
+[name="chevron-forward-circle"]{
+  color: blue;
+}

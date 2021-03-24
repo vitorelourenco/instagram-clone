@@ -3,7 +3,8 @@
 #navbar [name="heart-outline"],
 #navbar [name="person-outline"],
 #nav-left > a > img,
-.stories-chevron{
+.stories-chevron,
+aside {
   display: none; 
 }
 
@@ -123,12 +124,18 @@ a {
   height: 32px;
   border-radius: 50%;
   margin-right: 15px;
+  object-fit: cover;
 }
 
 .post-img{
   width: 100%;
   height: 100vw;
   object-fit: cover;
+}
+
+.post-video{
+  width: 100%;
+  height: auto;
 }
 
 .post-interactive-icons {
@@ -138,10 +145,14 @@ a {
   justify-content: space-between;
 }
 
+.post-interactive-icons > div:first-child > a {
+  margin-right: 13px;
+}
+
 .post-likes {
   display: flex;
   align-items: center;
-  margin: 0 17px 8px 17px;
+  margin: 0 17px 10px 17px;
 }
 
 .post-likes a{
@@ -161,6 +172,8 @@ a {
   font-weight: 300;
 }
 
+
+
 .post-likes-text a:last-child:hover{
   text-decoration: none;
 }
@@ -174,11 +187,12 @@ a {
 }
 
 .comments > * {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.comment a {
+.comment a,
+.post-description a  {
   font-weight: 500;
 }
 
@@ -187,8 +201,13 @@ a {
 }
 
 .view-comments,
-.time-stamp {
+.time-stamp{
   color: rgb(142, 142, 142); 
+}
+
+.view-comments a:hover,
+.time-stamp a:hover{
+  text-decoration: none;
 }
 
 .comment ion-icon{
@@ -207,6 +226,7 @@ a {
 .post-new-comment input {
   margin: 0 16px;
   height: 18px;
+  line-height: 18px;
   width: 0;
   flex-grow: 1;
   border: none;
@@ -352,8 +372,132 @@ a {
 }
 
 @media (min-width: 935px){
-  #navbar {
-    width: min(100% - 42px, 935px);
-    margin-left: max(21px, 50% - 467.5px);
+  aside {
+    display: initial;
+    position: fixed;
+    top: 88px;
+    left: calc(50% - 467.5px + 614px + 2px + 24px);
+    width: calc(935px - 614px - 2px - 24px);
   }
+
+  #navbar {
+    width: 935px;
+    margin-left: max(0px, 50% - 467.5px);
+  }
+
+  #main-content {
+    width: 614px;
+    margin-left: max(0px, 50% - 467.5px);
+    margin-right: 0;
+  }
+
+  #user-suggestions header {
+    margin-bottom: 24px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  #user-suggestions header img{
+    height: 56px;
+    width: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+  }
+
+  #user-suggestions header p{
+    margin-left: 17px;
+    line-height: 17px;
+    font-size: 14px;
+    color: #8e8e8e;
+    font-weight: 400;
+  }
+
+  #user-suggestions header p a{
+    color: black;
+    font-weight: 500;
+  }
+
+
+
+  .sug-text {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8e8e8e;
+  }
+
+  .sug-text a{
+    color: black;
+  }
+
+  .suggestion{
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  .suggestion > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 11px;
+    height: 32px;
+  }
+
+  .suggestion > div a{
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .suggestion > div p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e8e8e;
+  }
+
+  .suggestion img{
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .suggestion > p {
+    margin-left: auto;
+    color: #139ef2;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #user-suggestions ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+    line-height: 13px;
+    color: #c7c7c7;
+    margin-top: 33px;
+    margin-bottom: 18px;
+  }
+
+  #user-suggestions li:before{
+    content:"•";
+    margin: 0 0.5ch; 
+  }
+
+  #user-suggestions li:first-child::before{
+    content: none;
+  }
+
+  #user-suggestions .rights{
+    font-size: 11px;
+    line-height: 13px;
+    color: #c7c7c7;
+  }
+
+
 }

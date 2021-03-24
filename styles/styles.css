@@ -486,8 +486,7 @@ a.publish:hover {
   }
 
   #user-suggestions li:before{
-    content:"•";
-    margin: 0 0.5ch; 
+    content:"• ";
   }
 
   #user-suggestions li:first-child::before{

@@ -4,6 +4,7 @@
 #navbar [name="person-outline"],
 #nav-left > a > img,
 .stories-chevron,
+.shadow,
 aside {
   display: none; 
 }
@@ -67,6 +68,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-right: 14px;
+  width: 66px;
 }
 
 .story-headshot {
@@ -91,8 +93,13 @@ a {
 .story p{
   margin-top: 1px;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 16px;
   color: #262626;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: inherit;
+  text-align: center;
 }
 
 .post {
@@ -274,7 +281,8 @@ a.publish:hover {
 
   #navbar input,
   #nav-left > a > img,
-  .stories-chevron {
+  .stories-chevron,
+  .shadow {
     display: initial;
   }
 
@@ -358,8 +366,21 @@ a.publish:hover {
     font-size: 30px;
     color: white;
     border-radius: 50%;
-
   }
+
+  /* .shadow{
+    display: block;
+    width: 24.63333px;
+    height: 24.63333px;
+    position: absolute;
+    right: 8px;
+    top: 43px;
+    font-size: 30px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    background: transparent;
+  } */
 
   .post{
     border: 1px solid #dbdbdb;

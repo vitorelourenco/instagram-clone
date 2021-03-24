@@ -243,8 +243,9 @@ a {
   transition: color 300ms;
 }
 
-.publish:hover {
+a.publish:hover {
   color: #0095f6;
+  text-decoration: none;
 }
 
 /* commentbox */
@@ -375,7 +376,7 @@ a {
   aside {
     display: initial;
     position: fixed;
-    top: 88px;
+    top: 110px;
     left: calc(50% - 467.5px + 614px + 2px + 24px);
     width: calc(935px - 614px - 2px - 24px);
   }

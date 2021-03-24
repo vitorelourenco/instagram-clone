@@ -377,8 +377,8 @@ a.publish:hover {
     display: initial;
     position: fixed;
     top: 110px;
-    left: calc(50% - 467.5px + 614px + 2px + 24px);
-    width: calc(935px - 614px - 2px - 24px);
+    left: calc(50% - 467.5px + 614px + 2px + 14px);
+    width: 293px;
   }
 
   #navbar {

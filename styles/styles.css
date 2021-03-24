@@ -2,11 +2,32 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#navbar {
+  display: flex;
+  font-size: 21px;
+  padding: 0 27px;
+  height: 54px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-left,
+#nav-right {
+  width: 30px;
+}
+
+#navbar input{
+  display: none; 
+  text-align: center;
+}
+
+
 #stories{
   overflow: hidden;
-  padding: 0 18px;
+  padding: 18px;
   display: flex;
   position: relative;
+  background-color: #E5E5E5;
 }
 
 .story{
@@ -20,6 +41,8 @@ body {
   width: 66px;
   height: 66px;
   background-image: url("../assets/images/stories_background.jpg");
+  mix-blend-mode: multiply;
+  filter: brightness(1.2);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -124,4 +147,10 @@ body {
   flex-grow: 1;
   border: unset;
   resize: none;
+}
+
+@media (min-width: 614px){
+  #navbar input{
+    text-align: center;
+  }
 }

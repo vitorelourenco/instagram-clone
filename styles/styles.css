@@ -2,6 +2,7 @@
 #navbar [name="compass-outline"],
 #navbar [name="heart-outline"],
 #navbar [name="person-outline"],
+#nav-left > img,
 .stories-chevron,
 .post-new-comment  {
   display: none; 
@@ -140,10 +141,65 @@ a {
 }
 
 @media (min-width: 614px){
-  #navbar input{
-    display: initial;
-    text-align: center;
+  #navbar > img {
+    display: none;
   }
+
+  #navbar input,
+  #nav-left > img,
+  .stories-chevron {
+    display: initial;
+  }
+
+  #navbar [name="compass-outline"],
+  #navbar [name="heart-outline"],
+  #navbar [name="person-outline"] {
+    display: block;
+  }
+
+
+  #navbar input{
+    text-align: center;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    height: 25px;
+  }
+
+  #nav-left {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    position: relative;
+  }
+
+  #nav-left::before {
+    content:  " ";
+    position: absolute;
+    top: -1px;
+    left: 32px;
+    height: 24px;
+    width: 1px;
+    background-color: #dbdbdb;
+
+  }
+
+  #nav-left > img{
+    position: absolute;
+    top: 0;
+    left: 44px;
+  }
+
+  #nav-right {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #nav-right * {
+    margin-left: 25px;
+  }
+
 
   #main-content{
     max-width: 614px;
@@ -160,7 +216,6 @@ a {
   }
 
   .stories-chevron {
-    display: initial;
     position: absolute;
     right: 20px;
     top: 30px;

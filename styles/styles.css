@@ -155,8 +155,26 @@ a {
   font-weight: 300;
 }
 
+.nav-bot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background-color: white;
+  z-index: 10;
+  font-size: 21px;
+  padding: 0 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top: 1px solid #dbdbdb;
+}
+
 @media (min-width: 614px){
-  .md-none {
+  .md-none,
+  .nav-bot {
     display: none;
   }
 

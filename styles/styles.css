@@ -145,48 +145,42 @@ a {
 }
 
 .post-likes img {
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 5px;
 }
 
 .post-likes p {
-  margin-top: 2px;
   font-size: 14px;
   font-weight: 300;
 }
 
 /* commentbox */
 
+.comments {
+  margin: 0 17px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.comments > * {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.comment a {
+  font-weight: 500;
+}
+
 .post-description {
-  margin: 8px 17px;
-  font-size: 14px;
-  font-weight: 300;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
 }
 
-.post-description a {
-  font-weight: 500;
-}
-
-.view-comments {
-  margin: 8px 17px;
-  font-size: 14px;
-  font-weight: 300;
-  color: rgb(142, 142, 142)
-}
-
-.comment {
-  margin: 8px 17px;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.comment a{
-  font-weight: 500;
+.view-comments,
+.time-stamp {
+  color: rgb(142, 142, 142); 
 }
 
 .comment ion-icon{

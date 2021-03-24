@@ -129,8 +129,8 @@ a {
 }
 
 .post-interactive-icons {
-  font-size: 18px;
-  margin: 0 17px;
+  font-size: 21px;
+  margin: 14px 17px;
   display: flex;
   justify-content: space-between;
 }
@@ -138,12 +138,16 @@ a {
 .post-likes {
   display: flex;
   align-items: center;
-  margin: 0 17px;
+  margin: 0 17px 14px 17px;
+}
+
+.post-likes a{
+  font-weight: 500;
 }
 
 .post-likes img {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 5px;
@@ -280,7 +284,6 @@ a {
     border-top: 1px solid black;
     height: 56px;
     padding: 0 17px;
-    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,9 +299,19 @@ a {
   }
 
   .post-new-comment ion-icon{
-    font-size: 18px;
+    font-size: 21px;
     flex-shrink: 0;
   }
+
+  .publish{
+    color: #b2dffc;
+    transition: color 300ms;
+  }
+
+  .publish:hover{
+    color: #0095f6;
+  }
+
 }
 
 @media (min-width: 935px){

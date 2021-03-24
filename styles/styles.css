@@ -3,8 +3,7 @@
 #navbar [name="heart-outline"],
 #navbar [name="person-outline"],
 #nav-left > a > img,
-.stories-chevron,
-.post-new-comment  {
+.stories-chevron{
   display: none; 
 }
 
@@ -138,7 +137,7 @@ a {
 .post-likes {
   display: flex;
   align-items: center;
-  margin: 0 17px 14px 17px;
+  margin: 0 17px 8px 17px;
 }
 
 .post-likes a{
@@ -158,6 +157,75 @@ a {
   font-size: 14px;
   font-weight: 300;
 }
+
+/* commentbox */
+
+.post-description {
+  margin: 8px 17px;
+  font-size: 14px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-description a {
+  font-weight: 500;
+}
+
+.view-comments {
+  margin: 8px 17px;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(142, 142, 142)
+}
+
+.comment {
+  margin: 8px 17px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.comment a{
+  font-weight: 500;
+}
+
+.comment ion-icon{
+  float: right;
+}
+
+.post-new-comment{
+  border-top: 1px solid #dbdbdb;
+  height: 56px;
+  padding: 0 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-new-comment input {
+  margin: 0 16px;
+  height: 18px;
+  width: 0;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.post-new-comment ion-icon{
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+.publish {
+  color: #b2dffc;
+  transition: color 300ms;
+}
+
+.publish:hover {
+  color: #0095f6;
+}
+
+/* commentbox */
 
 .nav-bot {
   position: fixed;
@@ -279,39 +347,6 @@ a {
   .post-img{
     height: 640px;
   }
-
-  .post-new-comment{
-    border-top: 1px solid black;
-    height: 56px;
-    padding: 0 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .post-new-comment input {
-    margin: 0 16px;
-    height: 18px;
-    flex-grow: 1;
-    width: auto;
-    border: none;
-    outline: none;
-  }
-
-  .post-new-comment ion-icon{
-    font-size: 21px;
-    flex-shrink: 0;
-  }
-
-  .publish{
-    color: #b2dffc;
-    transition: color 300ms;
-  }
-
-  .publish:hover{
-    color: #0095f6;
-  }
-
 }
 
 @media (min-width: 935px){

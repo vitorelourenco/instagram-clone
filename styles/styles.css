@@ -101,6 +101,10 @@ a {
   margin-bottom: 60px;
 }
 
+.post a:hover{
+  text-decoration: underline;
+}
+
 .post header{
   display: flex;
   justify-content: space-between;
@@ -157,6 +161,10 @@ a {
   font-weight: 300;
 }
 
+.post-likes-text a:last-child:hover{
+  text-decoration: none;
+}
+
 /* commentbox */
 
 .comments {
@@ -174,8 +182,8 @@ a {
   font-weight: 500;
 }
 
-.post-description {
-
+.post-description{
+  line-height: 18px;
 }
 
 .view-comments,
@@ -309,7 +317,7 @@ a {
   }
 
   #main-content{
-    max-width: 614px;
+    max-width: min(100vw, 614px);
     margin-left: auto;
     margin-right: auto;
   }
@@ -339,7 +347,7 @@ a {
   }
 
   .post-img{
-    height: 640px;
+    height: min(100vw, 614px);
   }
 }
 

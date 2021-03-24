@@ -5,10 +5,11 @@ body {
 #navbar input,
 #navbar [name="compass-outline"],
 #navbar [name="heart-outline"],
-#navbar [name="person-outline"]{
+#navbar [name="person-outline"],
+.stories-chevron,
+.post-new-comment  {
   display: none; 
 }
-
 
 a {
   color: inherit;
@@ -67,6 +68,7 @@ a {
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .story p{
@@ -75,15 +77,6 @@ a {
   line-height: 14px;
   color: #262626;
 }
-
-.stories-chevron {
-  position: absolute;
-  right: 20px;
-  top: 30px;
-  font-size: 18px;
-  color: white;
-}
-
 
 .post header{
   display: flex;
@@ -138,34 +131,43 @@ a {
   font-weight: 300;
 }
 
-.post-new-comment{
-  margin: 0 17px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.post-new-comment ion-icon{
-  font-size: 18px;
-  flex-shrink: 0;
-}
-
-.hl{
-  height: 1px;
-  width: 100%;
-  background-color: red;
-}
-
-.post-new-comment textarea {
-  margin: 0 16px;
-  height: 18px;
-  flex-grow: 1;
-  border: unset;
-  resize: none;
-}
-
 @media (min-width: 614px){
   #navbar input{
+    display: initial;
     text-align: center;
   }
+
+  .stories-chevron {
+    display: initial;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-size: 18px;
+    color: white;
+  }
+
+  .post-new-comment{
+    border-top: 1px solid black;
+    height: 56px;
+    padding: 0 17px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .post-new-comment input {
+    margin: 0 16px;
+    height: 18px;
+    flex-grow: 1;
+    width: auto;
+    border: none;
+    outline: none;
+  }
+
+  .post-new-comment ion-icon{
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
 }

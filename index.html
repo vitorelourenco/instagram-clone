@@ -49,7 +49,7 @@
           </div>
           <ion-icon name="ellipsis-horizontal"></ion-icon>  
         </header>
-        <img src="assets/images/placeholder.jpeg" alt="">
+        <img class="post-img" src="assets/images/placeholder.jpeg" alt="">
         <div class="post-interactive-icons">
           <div>
             <ion-icon name="heart-outline"></ion-icon>
@@ -62,13 +62,15 @@
             <ion-icon name="bookmark-outline"></ion-icon>
           </div>
         </div>
-        <span>
-          <img src="" alt="">
-          Curtido por
-          <a href="">Pedrin</a>
-          and
-          <a href="">outras 101 pessoas</a>
-        </span>
+        <div class="post-likes">
+          <img class="post-likes-img" src="assets/images/placeholder.jpeg" alt="">
+          <p class="post-likes-text">
+            Curtido por
+            <a href="">Pedrin</a>
+            e
+            <a href="">outras 101 pessoas</a>
+          </p>
+        </div>
         <p class="post-description">
 
         </p>
@@ -82,10 +84,11 @@
           
         </p>
         <p class="time-stamp">
+        </p>
         <div class="hl"></div>
         <div class="post-new-comment">
           <ion-icon name="happy-outline"></ion-icon>
-          <input type="text" placeholder="Add a comment...">
+          <textarea placeholder="Add a comment..."></textarea>
           <a href="">Post</a>
         </div>
       </article>

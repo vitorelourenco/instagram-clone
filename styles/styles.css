@@ -9,3 +9,82 @@ body {
 [name="chevron-forward-circle"]{
   color: blue;
 }
+
+.post header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 17px;
+  height: 60px;
+}
+
+.poster{
+  display: flex;
+  align-items: center;
+}
+
+.poster-headshot{
+  width:32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.post-img{
+  width: 100%;
+  height: 100vw;
+  object-fit: cover;
+}
+
+.post-interactive-icons {
+  font-size: 18px;
+  margin: 0 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-likes {
+  display: flex;
+  align-items: center;
+  margin: 0 17px;
+}
+
+.post-likes img {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.post-likes p {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.post-new-comment{
+  margin: 0 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-new-comment ion-icon{
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.hl{
+  height: 1px;
+  width: 100%;
+  background-color: red;
+}
+
+.post-new-comment textarea {
+  margin: 0 16px;
+  height: 18px;
+  flex-grow: 1;
+  border: unset;
+  resize: none;
+}

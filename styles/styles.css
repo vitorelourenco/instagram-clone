@@ -88,8 +88,9 @@ a {
   width: 66px;
   height: 66px;
   background-image: url("../assets/images/stories_background.jpg");
-  mix-blend-mode: multiply;
-  filter: brightness(1.2);
+  border-radius: 50%;
+  /* mix-blend-mode: multiply;
+  filter: brightness(1.2); */
   background-size: cover;
   display: flex;
   justify-content: center;

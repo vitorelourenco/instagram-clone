@@ -301,6 +301,10 @@ a.publish:hover {
     border-radius: 3px;
     height: 25px;
     outline: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #navbar input:focus {
@@ -309,7 +313,6 @@ a.publish:hover {
 
   #nav-left {
     display: flex;
-    width: 160px;
     align-items: center;
     position: relative;
   }
@@ -331,13 +334,12 @@ a.publish:hover {
   }
 
   #nav-right {
-    width: 160px;
     display: flex;
     justify-content: flex-end;
   }
 
   #nav-right * {
-    margin-left: 25px;
+    margin-left: 22px;
     flex-shrink: 0;
   }
   

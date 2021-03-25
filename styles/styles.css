@@ -33,16 +33,17 @@ a {
 #navbar {
   display: flex;
   font-size: 21px;
-  margin: 0 21px;
   height: 54px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: calc(100% - 42px);
   z-index: 20;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  width: calc(100% - 42px);
+  max-width: 935px;
 }
 
 #nav-left,
@@ -345,6 +346,7 @@ a.publish:hover {
   }
 
   #main-content{
+    box-sizing: border-box;
     max-width: min(100vw, 614px);
     margin-left: auto;
     margin-right: auto;
@@ -397,13 +399,12 @@ a.publish:hover {
     display: initial;
     position: fixed;
     top: 110px;
-    left: calc(50% - 467.5px + 614px + 2px + 14px);
+    left: calc(max(0px, 50% - 467.5px) + 614px + 14px);
     width: 293px;
   }
 
   #navbar {
-    width: 935px;
-    margin-left: max(0px, 50% - 467.5px);
+    max-width: 935px;
   }
 
   #main-content {
@@ -417,10 +418,9 @@ a.publish:hover {
     height: 56px;
     display: flex;
     align-items: center;
-
   }
 
-  #user-suggestions header img{
+  #user-suggestions header img {
     height: 56px;
     width: 56px;
     object-fit: cover;
@@ -428,7 +428,7 @@ a.publish:hover {
     float: left;
   }
 
-  #user-suggestions header p{
+  #user-suggestions header p {
     margin-left: 17px;
     line-height: 17px;
     font-size: 14px;
@@ -436,12 +436,10 @@ a.publish:hover {
     font-weight: 400;
   }
 
-  #user-suggestions header p a{
+  #user-suggestions header p a {
     color: black;
     font-weight: 500;
   }
-
-
 
   .sug-text {
     margin-bottom: 18px;
@@ -452,17 +450,17 @@ a.publish:hover {
     color: #8e8e8e;
   }
 
-  .sug-text a{
+  .sug-text a {
     color: black;
   }
 
-  .suggestion{
+  .suggestion {
     margin-bottom: 18px;
     display: flex;
     align-items: center;
   }
 
-  .suggestion > div{
+  .suggestion > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -470,12 +468,12 @@ a.publish:hover {
     height: 32px;
   }
 
-  .suggestion > div a{
+  .suggestion > div a {
     font-size: 14px;
     font-weight: 500;
   }
 
-  .suggestion > div a:hover{
+  .suggestion > div a:hover {
     text-decoration: underline;
   }
 
@@ -485,7 +483,7 @@ a.publish:hover {
     color: #8e8e8e;
   }
 
-  .suggestion img{
+  .suggestion img {
     height: 32px;
     width: 32px;
     object-fit: cover;
@@ -499,7 +497,7 @@ a.publish:hover {
     font-weight: 500;
   }
 
-  #user-suggestions ul{
+  #user-suggestions ul {
     display: flex;
     flex-wrap: wrap;
     font-size: 11px;
@@ -509,15 +507,15 @@ a.publish:hover {
     margin-bottom: 18px;
   }
 
-  #user-suggestions li:before{
+  #user-suggestions li:before {
     content:"• ";
   }
 
-  #user-suggestions li:first-child::before{
+  #user-suggestions li:first-child::before {
     content: none;
   }
 
-  #user-suggestions .rights{
+  #user-suggestions .rights {
     font-size: 11px;
     line-height: 13px;
     color: #c7c7c7;

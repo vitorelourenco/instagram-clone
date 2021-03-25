@@ -475,6 +475,10 @@ a.publish:hover {
     font-weight: 500;
   }
 
+  .suggestion > div a:hover{
+    text-decoration: underline;
+  }
+
   .suggestion > div p {
     font-size: 12px;
     font-weight: 400;

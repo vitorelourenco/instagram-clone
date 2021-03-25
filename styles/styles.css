@@ -2,7 +2,7 @@
 #navbar [name="compass-outline"],
 #navbar [name="heart-outline"],
 #navbar [name="person-outline"],
-#nav-left > a > img,
+.nav-left-logo,
 .stories-chevron,
 .shadow,
 aside {
@@ -46,13 +46,25 @@ a {
   max-width: 935px;
 }
 
+.md-none{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 16px);
+}
+
 #nav-left,
 #nav-right {
-  width: 30px;
+  display: flex;
+  align-items: center;
 }
 
 #nav-right{
-  text-align: end;
+  justify-content: flex-end;
+}
+
+#nav-right *{
+  height: 21px;
 }
 
 #stories{
@@ -281,7 +293,7 @@ a.publish:hover {
   }
 
   #navbar input,
-  #nav-left > a > img,
+  .nav-left-logo,
   .stories-chevron,
   .shadow {
     display: initial;
@@ -312,8 +324,6 @@ a.publish:hover {
   }
 
   #nav-left {
-    display: flex;
-    align-items: center;
     position: relative;
   }
 
@@ -331,11 +341,6 @@ a.publish:hover {
     position: absolute;
     top: 0;
     left: 44px;
-  }
-
-  #nav-right {
-    display: flex;
-    justify-content: flex-end;
   }
 
   #nav-right * {

@@ -261,12 +261,16 @@ a {
   flex-shrink: 0;
 }
 
-.publish {
+button.publish {
   color: #b2dffc;
   transition: color 300ms;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
-a.publish:hover {
+button.publish:hover {
   color: #0095f6;
   text-decoration: none;
 }
